@@ -1,0 +1,27 @@
+body {
+  background-color:oldlace;
+color:#cc0000;
+font-size:150%;
+}
+
+h1 {
+  text-shadow: 2px 2px red;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#example1 {
+  background-image: url(b.onepiece.jpg), url(b.	onepiece.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
