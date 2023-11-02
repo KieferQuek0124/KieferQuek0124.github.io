@@ -20,7 +20,7 @@ button {
 }
 
 #example1 {
-  background-image: url(b.onepiece.jpg), url(b.	onepiece.jpg);
+  background-image: url(b.onepiece.jpg), url(b.onepiece.jpg);
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
   padding: 15px;
