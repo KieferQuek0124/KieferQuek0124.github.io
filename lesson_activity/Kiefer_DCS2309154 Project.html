@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KQ Shops</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><h1>KQ Shops</h1></div>
+        <ul class="menu">
+            <li><a href="" target="_self">Home</a></li>
+            <li><a href="shop.html" target="_self">Products</a></li>
+            <li><a href="contact.html" target="_self">Contact</a></li>
+            <li><a href="account.html" target="_self">Account</a></li>
+        </ul>
+
+<!--for responsive button-->
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h1>New Arrivals For Men & Women</h1>
+        <p>Get The Best Women Fashion Arrivals</p>
+        <button><a href="shop.html" target="_self">Shop Now</a></button>
+    </section>
+
+    <h1 class="pheading">Our Latest Products</h1>
+
+    <section class="sec">
+        <div class="products">
+            <div class="card">
+            <div class="img"><img src="hype.webp" alt=""></div>
+            <div class="desc">Men & Women</div>
+            <div class="title">Hype</div>
+            <div class="box">
+                <div class="price">149 MYR</div>
+                <button onclick="addToCart('Hype',149)" class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card" >
+            <div class="img"><img src="tntco.webp" alt=""></div>
+            <div class="desc">Men & Women</div>
+            <div class="title">TNTCO Wano Luffy Tee</div>
+            <div class="box">
+                <div class="price">189 MYR</div>
+                <button onclick="addToCart('TNTCo Wano Luffy Tee',189)" class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="adlv.webp" alt=""></div>
+            <div class="desc">Men & Women</div>
+            <div class="title">ADLV (Acme De La Vie) 2021 Tee</div>
+            <div class="box">
+                <div class="price">199 MYR</div>
+                <button onclick="addToCart('ADLV (Acme De La Vie) 2021 Tee',199)" class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="dunk.webp" alt=""></div>
+            <div class="desc">Men & Women</div>
+            <div class="title">Nike Dunk Low Retro</div>
+            <div class="box">
+                <div class="price">439 MYR</div>
+                <button onclick="addToCart('Nike Dunk Low Retro',439)" class="btn">Buy Now</button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <h1><i class="fas fa-shopping-cart" onclick="showCart()"></i></a></h1>
+
+    <div id="cart-container"> 
+        <h2>Shopping Cart</h2> 
+        <ul id="cart-items"></ul> 
+        <p>Total: <span id="cart-total">0 MYR</span></p> 
+    </div>
+
+
+    <script type="text/javascript" src="javascript.js">
+    </script>
+    
+</body>
+</html>
