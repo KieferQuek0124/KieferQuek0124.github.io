@@ -1,0 +1,133 @@
+<html>
+<head>
+
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+<title>Tutorial 19</title>
+
+<script>
+    function updateOptions() {
+        // Get the selected course value
+        var selectedCourse = document.getElementById("course").value;
+
+        // Get the course number dropdown element
+        var courseNumberDropdown = document.getElementById("courseNumber");
+
+        // Clear existing options
+        courseNumberDropdown.innerHTML = '';
+
+        // Add options based on the selected course
+        switch (selectedCourse) {
+            case "dcs":
+                addOption(courseNumberDropdown, "dcs1001", "DCS 1001");
+                addOption(courseNumberDropdown, "dcs1002", "DCS 1002");
+                addOption(courseNumberDropdown, "dcs1003", "DCS 1003");
+                break;
+            case "dib":
+                addOption(courseNumberDropdown, "dib1001", "DIB 1001");
+                addOption(courseNumberDropdown, "dib1002", "DIB 1002");
+                addOption(courseNumberDropdown, "dib1003", "DIB 1003");
+                break;
+            default:
+                // Handle other cases if needed
+                break;
+        }
+    }
+
+    function addOption(selectElement, value, text) {
+        var option = document.createElement("option");
+        option.value = value;
+        option.text = text;
+        selectElement.add(option);
+    }
+</script>
+</head>
+<style>
+body {
+  font-size: 20px;
+ height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #E2C9D1 , #C2D84B);
+  font-family:Algerian;
+}
+
+</style>
+<center>
+<table>
+<form>
+<tr>
+<th class=a colspan=2>Personal details:</th>
+</tr>
+
+<tr>  
+<td class=a>First Name:</td>
+<td><input type=text name=fname> </td>
+</tr>
+
+<tr>
+<td class=a>Last Name:</td>
+<td><input type=text name=lname></td>
+</tr>
+
+<tr>
+<td class=a>Gender:</td>
+<td><input type = radio name = gender value = Male> Male 
+<input type = radio name = gender value = Female> Female </td>
+</tr>
+
+<tr>
+<td class=a>Choose your favorite subjects:</td>
+<td><input type=checkbox name=fav_sub value=DCS4103>DCS4103
+<input type=checkbox name=fav_sub value=DCS3003>DCS3003
+<input type=checkbox name=fav_sub value=MST1003>MST1003
+<input type=checkbox name=fav_sub value=MST2003>MST2003 </td>
+</tr>
+
+<tr>
+<td class=a>Address:</td>
+<td><textarea rows=4 cols=30 name=address></textarea></td>
+</tr>
+
+<tr>
+<td class=a>Date of birth:</td>
+<td><input type=date name dob></td>
+</tr>
+
+<tr>
+<td class=a>Login Password:</td>
+<td><input type=password name=loginpass></td>
+</tr>
+
+<tr>
+<td class=a>Course:</td>
+<td>
+<select id="course" onchange="updateOptions()">
+    <option value="list">List of Course</option>
+    <option value="dcs">Diploma in Computer Science</option>
+    <option value="dib">Diploma in Business</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="courseNumber">Choose a course number:</label>
+</td>
+<td>
+<select id="courseNumber">
+</select>
+</td>
+</tr>
+
+<tr>
+<th class=a colspan=2><input type=submit value=Submit>
+<input type=reset value=Reset></th>
+</tr>
+</form>
+</table>
+</center>
+
+
+
+
+</body>
+</html>
